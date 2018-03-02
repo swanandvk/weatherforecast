@@ -1,0 +1,51 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+</div>
+<div class="container">
+
+ <div class="alert alert-info" role="alert">
+    <h3>City : {{city}},{{country}}</h3>
+    </div>
+
+  <div class="row">
+   
+    <div class="card col-md-15"  *ngFor="let item of details ">
+      <div class="card-header"><h5 class="card-title"> {{item.dt_txt | date:'fullDate'}}</h5></div>
+      <div class="card-img-top">
+        <img  src="http://openweathermap.org/img/w/{{item['weather'][0].icon}}.png" alt="">
+        <h4>{{item['main'].temp}} °C</h4>   <h5>{{item['weather'][0].main}} </h5>
+        
+        <span class="badge badge-warning">{{item['main'].temp_max}} °C</span>
+        <span class="badge badge-secondary">{{item['main'].temp_min}} °C</span>
+
+       
+      </div>
+      <div class="card-body">
+        <h5>{{item['weather'][0].description}} </h5>
+        
+        <h6>wind : {{item['wind'].speed}} m/s  </h6>
+       
+        <h6>Pressure : {{item['main'].pressure}}  hPa</h6>
+
+        <h6>Humidity : {{item['main'].humidity}} %</h6>
+      </div>
+      
+  
+    </div>
+    
+   
+
+      
+
+    
+  </div>
+
+
+</div>
+
+
+
