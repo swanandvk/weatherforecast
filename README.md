@@ -12,7 +12,7 @@ This app is written in Angular and it makes us of the [OpenWeatherMap](http://op
 
 ## Demo
 
-the live demo site running this app can be found [here](). 
+the live demo site running this app can be found [here](https://swaky.github.io/weatherforecast/). 
 
 
 ## Development server
