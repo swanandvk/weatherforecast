@@ -1,11 +1,19 @@
 
-# Weatherforecast
+# Weatherforecast  
 
 ![screen shot 2018-03-02 at 8 41 40 pm](https://user-images.githubusercontent.com/14261123/36906412-df9c58f4-1e5b-11e8-8705-473bad078c1b.png)
 
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
+
+
+This app is written in Angular and it makes us of the [OpenWeatherMap](http://openweathermap.org/forecast5) api for retrieving weather data and forecast based on given location (city)
+
+## Demo
+
+the live demo site running this app can be found [here](). 
+
 
 ## Development server
 

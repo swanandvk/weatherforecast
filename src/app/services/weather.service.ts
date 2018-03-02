@@ -14,6 +14,6 @@ export class WeatherService {
 
 
       getWeatherDetails(){
-        return this.http.get('http://api.openweathermap.org/data/2.5/forecast?q=Pune,ind&units=metric&appid=1ffaa80ea2d33fe521d4f7f22167adcf').map(res => res);
+        return this.http.get('https://api.openweathermap.org/data/2.5/forecast?q=Pune,ind&units=metric&appid=1ffaa80ea2d33fe521d4f7f22167adcf').map(res => res);
       }
 }
