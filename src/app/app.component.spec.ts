@@ -6,10 +6,11 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule],
       declarations: [
         AppComponent
       ],
-      providers:[WeatherService,HttpClientModule]
+      providers:[WeatherService]
     }).compileComponents();
   }));
   it('should create the app', async(() => {
@@ -26,6 +27,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Weather Forecast !');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Weather Forecast');
   }));
 });

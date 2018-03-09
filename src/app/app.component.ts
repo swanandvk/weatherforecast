@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { WeatherService } from "./services/weather.service";
-import { HttpClientModule,HttpClient } from "@angular/common/http";
+import { HttpClientModule, HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  providers: [ WeatherService,HttpClient ],
+  providers: [ WeatherService, HttpClientModule,HttpClient],
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Weather Forecast ';
+  title = 'Weather Forecast';
   city:String;
   country:String;
   details=[];
