@@ -11,3 +11,5 @@ before_script:
 
 script:
   - ng build --prod
+  - ng test
+  - ng e2e
